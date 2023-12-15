@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/crypto-app/static/css/main.2f00595a.css",
+    "main.js": "/crypto-app/static/js/main.ffcd5ffd.js",
+    "static/media/card.png": "/crypto-app/static/media/card.7b9ea901df9f72e62467.png",
+    "static/media/cloud.png": "/crypto-app/static/media/cloud.f40e43d11b613c674312.png",
+    "static/media/btc.svg": "/crypto-app/static/media/btc.15f0ed46bbf93c2e9c18.svg",
+    "static/media/avax.svg": "/crypto-app/static/media/avax.24e04b2f0255bf7ba9a5.svg",
+    "index.html": "/crypto-app/index.html",
+    "main.2f00595a.css.map": "/crypto-app/static/css/main.2f00595a.css.map",
+    "main.ffcd5ffd.js.map": "/crypto-app/static/js/main.ffcd5ffd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f00595a.css",
+    "static/js/main.ffcd5ffd.js"
+  ]
+}
