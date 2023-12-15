@@ -1,0 +1,245 @@
+.home {
+    width: 75%;
+    margin: auto;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem 0 6rem 0;
+}
+
+#loading {
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.table {
+    text-align: center;
+}
+
+.table button {
+    width: 7rem;
+    height: 1.8rem;
+    background: #1900ADFF;
+    color: #ffffff;
+    padding: 3px;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.top-txt {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bolder;
+}
+
+#backgroundClip {
+    background: linear-gradient(203deg, rgba(25, 0, 173, 1) 0%, rgba(216, 45, 253, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.coin {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    animation: bounce linear infinite 2.5s;
+}
+
+#btc {
+    background: url("../../assets/btc.svg") no-repeat center #f6921a;
+    background-size: 100%;
+    box-shadow: 0 0 0 7px #e6850f, inset 5px -2px 5px #c07420;
+}
+
+#avax {
+    background: url("../../assets/avax.svg") no-repeat center #e84142;
+    background-size: 100%;
+    box-shadow: 0 0 0 7px #e61f21, inset 5px -2px 5px #ae1d1e;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.topCoins {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 9rem;
+    gap: 7px;
+}
+
+.topCoin img {
+    width: 5rem;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-bottom: solid silver 1px;
+}
+
+td, th, table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border-top: solid silver 1px;
+    padding: 10px 0;
+}
+
+.coinName-span {
+    position: relative;
+    bottom: .6rem;
+
+}
+
+.coinName img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 5px;
+
+}
+
+.btF {
+    width: 100%;
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.bottom-txt {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bolder;
+}
+
+#s-txt {
+    margin-top: .6rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.discordBtn {
+    background: linear-gradient(203deg, rgba(25, 0, 173, 1) 0%, rgba(216, 45, 253, 1) 100%);
+    color: #ffffff;
+    border: transparent;
+    width: 12rem;
+    height: 2.8rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+@media (min-width: 37rem) and (max-width: 56rem) {
+    .home {
+        width: 90%;
+    }
+
+    .no-tablet {
+        display: none;
+    }
+
+    .coin {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .top {
+        margin: 7rem 0;
+    }
+
+    .topCoin img {
+        width: 4.5rem;
+    }
+
+    .topCoins {
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 37rem) {
+    .home {
+        width: 90%;
+    }
+
+    .no-tablet, .no-mobile {
+        display: none;
+    }
+
+    .top {
+        justify-content: space-evenly;
+        margin: 5rem 0 3rem 0;
+    }
+
+    .top-txt {
+        font-size: clamp(1.4rem, 5vw, 1.7rem);
+    }
+
+    .bottom-txt {
+        font-size: clamp(1.7rem, 5vw, 2rem);
+    }
+
+    #s-txt {
+        font-size: 1rem
+    }
+
+    .coin {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .topCoin img {
+        width: 3.5rem;
+    }
+
+    .topCoins {
+        margin-bottom: 5rem;
+        font-size: .9rem;
+    }
+
+    .table button {
+        width: 6rem;
+        height: 1.6rem;
+        padding: 3px;
+        border-radius: 1rem;
+        margin: .5rem;
+    }
+}
