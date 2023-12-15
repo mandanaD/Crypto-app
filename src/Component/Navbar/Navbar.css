@@ -1,0 +1,91 @@
+.nav {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    font-weight: bold;
+}
+
+.onClose {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8rem;
+    width: 30%;
+}
+
+.links {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.links div {
+    text-transform: uppercase;
+}
+
+.icons > * {
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.navIcon {
+    display: none;
+}
+
+@media (min-width: 37rem) and (max-width: 56rem) {
+    .nav {
+        width: 95%;
+    }
+
+    .onClose {
+        width: 80%;
+    }
+
+    .links {
+        width: 70%;
+    }
+}
+
+@media (max-width: 37rem) {
+    .nav {
+        width: 90%;
+    }
+
+    .navIcon {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .onClose {
+        width: 100%;
+        flex-direction: column;
+        max-height: 100%;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: hsl(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(1rem);
+        z-index: 2;
+        transition: ease-out transform 350ms;
+        inset: 0 0 0 100%;
+    }
+
+    .open {
+        transform: translateX(-100%);
+    }
+}

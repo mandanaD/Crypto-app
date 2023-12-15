@@ -1,0 +1,71 @@
+.main {
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+#title {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    background: linear-gradient(203deg, rgba(25, 0, 173, 1) 0%, rgba(216, 45, 253, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 3rem 0;
+}
+
+.sign {
+    color: #D82DFDFF;
+    cursor: pointer;
+}
+
+.box {
+    margin: 1rem 0;
+    border-radius: 7px;
+    padding: .5rem;
+}
+
+.dark-box {
+    background: #151515;
+}
+
+.light-box {
+    background: #f4f4f6;
+}
+
+.num {
+    padding-inline: 7px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.answer {
+    font-weight: bold;
+    font-size: clamp(.8rem, 5vw, 1rem);
+    color: #7f8896;
+    padding-bottom: 1rem;
+    padding-inline: 3rem;
+    transition: all linear 0.3s;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.show {
+    max-height: 30rem;
+    opacity: 1;
+}
+
+@media (max-width: 37rem) {
+    .answer {
+        padding-inline: 1rem;
+        font-size: .8rem;
+    }
+}
